@@ -37,5 +37,5 @@ Identifiants et mots de passe :
         password : mot2passeRoot
 
     Utilisation admin de la BDD :
-        login : dbadminuser
+        login : monutilisateur
         password : mot2passUser
