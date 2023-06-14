@@ -1,6 +1,6 @@
 
 Bonjour,
-Voici un petit projet de "containerisation" pour les personnes (féneantess comme moi) qui on besoin d'un environement de développement PHP avec une base des données relationnelle et qui ne veulent pas installer la pile LAMP, WAMP, XAMP ou MAMP sur sa machine tout en bénéficiant des avantage de cette "stack".
+Voici un petit projet de "containerisation" pour les personnes (féneantess comme moi) qui on besoin d'un environement de développement PHP avec une base des données relationnelle et qui ne veulent pas installer la pile LAMP, WAMP, XAMP ou MAMP sur leurs machines tout en bénéficiant des avantage de cette "stack".
 
 Prérequis :
     .- Installer "Docker" (voire Docker Desktop) sur sa machine
@@ -34,8 +34,8 @@ Acces au site web et/ou à la base des données :
 Identifiants et mots de passe :
     Administration de la BDD :
         login : root
-        password : example
+        password : mot2passeRoot
 
-    Utilisation de la BDD :
-        login : myappuser
-        password : myapppassword
+    Utilisation admin de la BDD :
+        login : dbadminuser
+        password : mot2passUser
