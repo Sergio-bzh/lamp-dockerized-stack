@@ -1,6 +1,6 @@
 
 Bonjour,
-Voici un petit projet de "containerisation" pour les personnes (féneantess comme moi) qui on besoin d'un environement de développement PHP avec une base des données relationnelle et qui ne veulent pas installer la pile LAMP, WAMP, XAMP ou MAMP sur sa machine tout en bénéficiant des avantage de cette "stack".
+Voici un petit projet de "containerisation" pour les personnes (féneantess comme moi) qui on besoin d'un environement de développement PHP avec une base des données relationnelle et qui ne veulent pas installer la pile LAMP, MAMP, WAMP ou XAMP sur leurs machines tout en bénéficiant des avantage de cette "stack".
 
 Prérequis :
     .- Installer "Docker" (voire Docker Desktop) sur sa machine
@@ -34,8 +34,46 @@ Acces au site web et/ou à la base des données :
 Identifiants et mots de passe :
     Administration de la BDD :
         login : root
-        password : example
+        password : mot2passeRoot
 
-    Utilisation de la BDD :
-        login : myappuser
-        password : myapppassword
+    Utilisation admin de la BDD :
+        login : monutilisateur
+        password : mot2passUser
+
+= = = = = = = = = PARTICULARITÉS QUE J'AI RENCONTRE SELON L'Système utilisé = = = = = = = = = 
+
+Sur MAC :
+    .- Un serveur http est installé par défaut sur le système :
+        - Pour savoir s'il tourne et connaitre sont port :
+            sudo launchctl list | grep 'apache'
+                    ou
+            sudo apachectl status  
+            
+        - Pour arrêter le serveur :
+            sudo apachectl stop   
+
+    .- Si (comme moi) vous aviez installé MySQL en local sur votre Mac pour apprendre le SQL et ne voulez pas le désisinstaller :
+        - Pour savoir si le service MySQL est en cours d'exécution et connaitre son port :
+            sudo launchctl list | grep 'apache'
+        - Pour l'arrêter en fonction de votre système et selot vos préférences :
+            sudo mysqladmin shutdown
+                    ou
+            sudo /usr/local/mysql/support-files/mysql.server stop
+
+Sur GNU/Linux :
+    .- 
+        - 
+        - 
+
+    .- 
+        - 
+        - 
+
+Sur Windows(11) :
+    .- 
+        - 
+        - 
+
+    .- 
+        - 
+        - 

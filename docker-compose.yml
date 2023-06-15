@@ -13,10 +13,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: mot2passeRoot
       MYSQL_DATABASE: myapp
-      MYSQL_USER: myappuser
-      MYSQL_PASSWORD: myapppassword
+      MYSQL_USER: monutilisateur
+      MYSQL_PASSWORD: mot2passUser
     volumes:
       - ./db:/var/lib/mysql
   phpmyadmin:
@@ -25,4 +25,4 @@ services:
       - "8080:80"
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: mot2passeRoot
