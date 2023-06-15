@@ -39,3 +39,41 @@ Identifiants et mots de passe :
     Utilisation admin de la BDD :
         login : monutilisateur
         password : mot2passUser
+
+= = = = = = = = = PARTICULARITÉS QUE J'AI RENCONTRE SELON L'Système utilisé = = = = = = = = = 
+
+Sur MAC :
+    .- Un serveur http est installé par défaut sur le système :
+        - Pour savoir s'il tourne et connaitre sont port :
+            sudo launchctl list | grep 'apache'
+                    ou
+            sudo apachectl status  
+            
+        - Pour arrêter le serveur :
+            sudo apachectl stop   
+
+    .- Si (comme moi) vous aviez installé MySQL en local sur votre Mac pour apprendre le SQL et ne voulez pas le désisinstaller :
+        - Pour savoir si le service MySQL est en cours d'exécution et connaitre son port :
+            sudo launchctl list | grep 'apache'
+        - Pour l'arrêter en fonction de votre système et selot vos préférences :
+            sudo mysqladmin shutdown
+                    ou
+            sudo /usr/local/mysql/support-files/mysql.server stop
+
+Sur GNU/Linux :
+    .- 
+        - 
+        - 
+
+    .- 
+        - 
+        - 
+
+Sur Windows(11) :
+    .- 
+        - 
+        - 
+
+    .- 
+        - 
+        - 
