@@ -61,13 +61,8 @@ Sur MAC :
             sudo /usr/local/mysql/support-files/mysql.server stop
 
 Sur GNU/Linux :
-    .- 
-        - 
-        - 
 
-    .- 
-        - 
-        - 
+    A U C U N E   P A R T I C U L A R I T É   T R O U V É E
 
 Sur Windows(11) :
     .- 
