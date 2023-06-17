@@ -1,4 +1,3 @@
-
 Bonjour,
 Voici un petit projet de "containerisation" pour les personnes (féneantess comme moi) qui on besoin d'un environement de développement PHP avec une base des données relationnelle et qui ne veulent pas installer la pile LAMP, MAMP, WAMP ou XAMP sur leurs machines tout en bénéficiant des avantage de cette "stack".
 
@@ -19,11 +18,11 @@ Outil graphique pour la gestion des bases des données via navigateur web :
 
 Persistence des données :
     Les données du serveur sont conservées dans des "volumes" locaux sur la machine hôte (c'est à dire notre PC) et rendus visibles sur les containers Docker comme ci-dessous :
-        .- Sur le PC hôte le site web est stocqué dans le dossier app "app" qui doit se trouver au même endroit que le fichier docker-compose.yml
-        .- Dans le container Docker (c'est à dire le serveur http de la stack) le site web est hébergé dans le dossier /var/www.html
+        .- Sur le PC hôte le site web est stocqué dans le dossier "app" qui doit se trouver au même endroit que le fichier docker-compose.yml
+        .- Dans le container Docker (c'est à dire le serveur http de la stack) le site web est hébergé dans le dossier /var/www/html
 
 Création des containers à proprement parler :
-    .- Ouvrez une invite de commande et positionnez vous dans votre dossier projet
+    .- Ouvrez une invite de commande sur votre machine et positionnez vous dans votre dossier projet
     .- Exécutez la commande "docker-compose up -d"
     A M U S E Z      V O U S !
 
@@ -36,7 +35,7 @@ Identifiants et mots de passe :
         login : root
         password : mot2passeRoot
 
-    Utilisation admin de la BDD :
+    Utilisation de la BDD :
         login : monutilisateur
         password : mot2passUser
 
@@ -49,7 +48,7 @@ Sur MAC :
                     ou
             sudo apachectl status  
             
-        - Pour arrêter le serveur :
+        - Pour arrêter le service :
             sudo apachectl stop   
 
     .- Si (comme moi) vous aviez installé MySQL en local sur votre Mac pour apprendre le SQL et ne voulez pas le désisinstaller :
