@@ -49,6 +49,8 @@ Il est préférable de renseigner ces informations dans un fichier d'environneme
 
     J'ai mis cette information en clair dans la fichier YAML pour faciliter la compréhension et la lecture aux personnes qui n'ont pas encore eu contact avec Docker.
 
+Le fichier docker-compose.yml peut être refactorisé en faisant mention du fichier .env au lieu de nommer les variables mais cette demarche le rends plus dificile à comprendre lorsqu'on débute sur Docker. 
+
 ATTENTION !! 
 
 
@@ -66,8 +68,10 @@ Sur MAC :
 
     .- Si (comme moi) vous aviez installé MySQL en local sur votre Mac pour apprendre le SQL et ne voulez pas le désisinstaller :
         - Pour savoir si le service MySQL est en cours d'exécution et connaitre son port :
-            sudo launchctl list | grep 'apache'
+            sudo launchctl list | grep 'mysql'
         - Pour l'arrêter en fonction de votre système et selot vos préférences :
+            sudo mysqladmin stop
+                    ou
             sudo mysqladmin shutdown
                     ou
             sudo /usr/local/mysql/support-files/mysql.server stop
@@ -78,4 +82,4 @@ Sur GNU/Linux :
 
 Sur Windows(11) :
     
-        A U C U N E   P A R T I C U L A R I T É   T R O U V É E
+    A U C U N E   P A R T I C U L A R I T É   T R O U V É E
