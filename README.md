@@ -39,6 +39,19 @@ Identifiants et mots de passe :
         login : monutilisateur
         password : mot2passUser
 
+= = = = = = = = = NOTA IMPORTANTE = = = = = = = = = 
+
+ATTENTION !! 
+
+Sachez qu'il n'est pas considéré comme une bonne practique du point de vue de la sécurité de mettre en clair les informations de connexion dans le fichier docker-compose.yml.
+
+Il est préférable de renseigner ces informations dans un fichier d'environnement séparé et de faire référence aux variables d'environnement présentes dans le fichier ".env" à l'intérieur du fichier docker-compose.yml.
+
+    J'ai mis cette information en clair dans la fichier YAML pour faciliter la compréhension et la lecture aux personnes qui n'ont pas encore eu contact avec Docker.
+
+ATTENTION !! 
+
+
 = = = = = = = = = PARTICULARITÉS QUE J'AI RENCONTRE SELON L'Système utilisé = = = = = = = = = 
 
 Sur MAC :
