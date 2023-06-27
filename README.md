@@ -8,8 +8,8 @@ Voici un petit projet de "containerisation" pour les personnes (féneantess comm
 - Installer "Docker" (voire Docker Desktop) sur sa machine
 - Créer un compte sur DockerHub pour pouvoir rappatrier les images
 - Créer un dossier sur sa machine pour contenir votre projet (éviter les espaces dans le nom du dossier)
-  - Créer un dossier "app" et un dossier "db" dans votre dossier projet
-- Copiez le fichier docker-compose.yml dans votre dossier projet (au même niveau que vos dossers "app" et "db")
+  - Créer un dossier **"app"** et un dossier **"db"** dans votre dossier projet
+- Copiez le fichier docker-compose.yml dans votre dossier projet (au même niveau que vos dossers **"app"** et **"db"**)
  
 ## Serveurs présents dans les containers de la pile
 - Apache
@@ -21,7 +21,7 @@ Voici un petit projet de "containerisation" pour les personnes (féneantess comm
 
 ## Persistence des données
 Les données du serveur sont conservées dans des "volumes" locaux sur la machine hôte (c'est-à-dire notre PC) et rendus visibles sur les containers Docker comme ci-dessous :
-- Sur le PC hôte, le site web est stocké dans le dossier "app" qui doit se trouver au même endroit que le fichier docker-compose.yml
+- Sur le PC hôte, le site web est stocké dans le dossier **"app"** qui doit se trouver au même endroit que le fichier docker-compose.yml
 - Dans le container Docker (c'est-à-dire le serveur HTTP de la stack), le site web est hébergé dans le dossier /var/www/html
 
 ## Création des containers à proprement parler
@@ -50,7 +50,7 @@ Sachez qu'il n'est pas considéré comme une bonne pratique du point de vue de l
 
 Il est préférable de renseigner ces informations dans un fichier d'environnement séparé et de faire référence aux variables d'environnement présentes dans le fichier ".env" à l'intérieur du fichier docker-compose.yml.
 
-*J'ai mis cette information en clair dans la fichier YAML pour faciliter la compréhension et la lecture aux personnes qui n'ont pas encore eu contact avec Docker.*
+*J'ai mis cette information en clair dans le fichier YAML pour faciliter la compréhension et la lecture aux personnes qui n'ont pas encore eu contact avec Docker.*
 
 Le fichier docker-compose.yml peut être refactorisé en faisant mention du fichier .env au lieu de nommer les variables, mais cette démarche le rend plus difficile à comprendre lorsqu'on débute sur Docker.
 
